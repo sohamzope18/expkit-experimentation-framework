@@ -257,22 +257,3 @@ experimentation/
 
 Python 3.11+. Runtime: numpy, scipy, pandas, statsmodels, matplotlib. Streamlit is an optional `[app]`
 extra so the library imports without it.
-
----
-
-## Interview defense
-
-The questions this project exists to let you answer.
-
-1. What does "always-valid" inference buy you, and what does it cost in power?
-2. Your SRM threshold is 0.001. Why not 0.05?
-3. Why does the naive variance fail for ratio metrics? What is the unit-of-analysis problem?
-4. CUPED gave 50% variance reduction here. What was ρ, and when would CUPED give you nothing?
-5. Primary up and significant, guardrail down and significant. What do you recommend, and why?
-6. Would you FDR-correct guardrail metrics? Argue both sides, then take a position.
-7. Your Type I error simulation shows 5.1%. Is that a bug?
-8. Why hash-based assignment rather than random assignment at request time?
-
-> **[OWNER]** — the numbers and mechanisms above are reproducible from the repo. What belongs here is
-> your framing: which of these decisions you would make differently at a company with 50 experiments a
-> year instead of 1,000, and which of the three unplanned findings you would have caught in review.

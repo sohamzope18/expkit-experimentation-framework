@@ -262,5 +262,5 @@ there is no one-sided option anywhere in the library (D5).
 
 D2, D3, and D4 were delegated rather than chosen by the owner. They are implemented and their
 simulations pass, but the rejected alternative is recorded in each so both sides can be argued. Sign
-them off — or overrule one — before presenting this work; the interview value is in defending them as
-your positions.
+them off — or overrule one — before presenting this work. The value of these choices lies in being
+able to defend them as your own positions, which requires that they are.
