@@ -1,0 +1,201 @@
+{
+  "all_within_3_mc_se": true,
+  "alpha": 0.05,
+  "binary": {
+    "n_per_arm": 2000,
+    "p_control": 0.1,
+    "points": [
+      {
+        "effect": 0.0,
+        "observed": {
+          "ci_lower": 0.045279,
+          "ci_upper": 0.057521,
+          "label": "binary d=0.000",
+          "mc_se": 0.003123,
+          "rate": 0.0514,
+          "successes": 257,
+          "trials": 5000
+        },
+        "predicted": 0.05
+      },
+      {
+        "effect": 0.005,
+        "observed": {
+          "ci_lower": 0.077078,
+          "ci_upper": 0.092522,
+          "label": "binary d=0.005",
+          "mc_se": 0.00394,
+          "rate": 0.0848,
+          "successes": 424,
+          "trials": 5000
+        },
+        "predicted": 0.081661
+      },
+      {
+        "effect": 0.01,
+        "observed": {
+          "ci_lower": 0.176583,
+          "ci_upper": 0.198217,
+          "label": "binary d=0.010",
+          "mc_se": 0.005519,
+          "rate": 0.1874,
+          "successes": 937,
+          "trials": 5000
+        },
+        "predicted": 0.177953
+      },
+      {
+        "effect": 0.015,
+        "observed": {
+          "ci_lower": 0.330436,
+          "ci_upper": 0.356764,
+          "label": "binary d=0.015",
+          "mc_se": 0.006716,
+          "rate": 0.3436,
+          "successes": 1718,
+          "trials": 5000
+        },
+        "predicted": 0.334307
+      },
+      {
+        "effect": 0.02,
+        "observed": {
+          "ci_lower": 0.526586,
+          "ci_upper": 0.554214,
+          "label": "binary d=0.020",
+          "mc_se": 0.007048,
+          "rate": 0.5404,
+          "successes": 2702,
+          "trials": 5000
+        },
+        "predicted": 0.524515
+      },
+      {
+        "effect": 0.025,
+        "observed": {
+          "ci_lower": 0.694992,
+          "ci_upper": 0.720208,
+          "label": "binary d=0.025",
+          "mc_se": 0.006433,
+          "rate": 0.7076,
+          "successes": 3538,
+          "trials": 5000
+        },
+        "predicted": 0.706238
+      },
+      {
+        "effect": 0.03,
+        "observed": {
+          "ci_lower": 0.828607,
+          "ci_upper": 0.848993,
+          "label": "binary d=0.030",
+          "mc_se": 0.0052,
+          "rate": 0.8388,
+          "successes": 4194,
+          "trials": 5000
+        },
+        "predicted": 0.84492
+      }
+    ]
+  },
+  "binary_mean_bias_vs_prediction": 0.005501,
+  "continuous": {
+    "n_per_arm": 2000,
+    "points": [
+      {
+        "absolute_effect": 0.0,
+        "lift": 0.0,
+        "observed": {
+          "ci_lower": 0.045657,
+          "ci_upper": 0.057943,
+          "label": "continuous lift=0.00",
+          "mc_se": 0.003134,
+          "rate": 0.0518,
+          "successes": 259,
+          "trials": 5000
+        },
+        "predicted": 0.05,
+        "predicted_equal_variance": 0.05
+      },
+      {
+        "absolute_effect": 0.108411,
+        "lift": 0.03,
+        "observed": {
+          "ci_lower": 0.051142,
+          "ci_upper": 0.064058,
+          "label": "continuous lift=0.03",
+          "mc_se": 0.003295,
+          "rate": 0.0576,
+          "successes": 288,
+          "trials": 5000
+        },
+        "predicted": 0.055661,
+        "predicted_equal_variance": 0.055834
+      },
+      {
+        "absolute_effect": 0.216823,
+        "lift": 0.06,
+        "observed": {
+          "ci_lower": 0.063309,
+          "ci_upper": 0.077491,
+          "label": "continuous lift=0.06",
+          "mc_se": 0.003618,
+          "rate": 0.0704,
+          "successes": 352,
+          "trials": 5000
+        },
+        "predicted": 0.072177,
+        "predicted_equal_variance": 0.073564
+      },
+      {
+        "absolute_effect": 0.325234,
+        "lift": 0.09,
+        "observed": {
+          "ci_lower": 0.083796,
+          "ci_upper": 0.099804,
+          "label": "continuous lift=0.09",
+          "mc_se": 0.004083,
+          "rate": 0.0918,
+          "successes": 459,
+          "trials": 5000
+        },
+        "predicted": 0.099034,
+        "predicted_equal_variance": 0.103749
+      },
+      {
+        "absolute_effect": 0.433646,
+        "lift": 0.12,
+        "observed": {
+          "ci_lower": 0.127275,
+          "ci_upper": 0.146325,
+          "label": "continuous lift=0.12",
+          "mc_se": 0.00486,
+          "rate": 0.1368,
+          "successes": 684,
+          "trials": 5000
+        },
+        "predicted": 0.135731,
+        "predicted_equal_variance": 0.146952
+      },
+      {
+        "absolute_effect": 0.542057,
+        "lift": 0.15,
+        "observed": {
+          "ci_lower": 0.171696,
+          "ci_upper": 0.193104,
+          "label": "continuous lift=0.15",
+          "mc_se": 0.005461,
+          "rate": 0.1824,
+          "successes": 912,
+          "trials": 5000
+        },
+        "predicted": 0.181512,
+        "predicted_equal_variance": 0.203286
+      }
+    ],
+    "true_control_variance": 231.568516,
+    "true_mean": 3.613715
+  },
+  "replications": 5000,
+  "seed": 20240603
+}

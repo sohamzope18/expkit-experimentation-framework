@@ -1,0 +1,166 @@
+{
+  "alpha": 0.05,
+  "delta_method_holds_nominal": true,
+  "nominal": 0.95,
+  "part_a": [
+    {
+      "ci_lower": 0.943856,
+      "ci_upper": 0.952544,
+      "label": "binary (two-proportion)",
+      "mc_se": 0.002216,
+      "rate": 0.9482,
+      "successes": 9482,
+      "trials": 10000,
+      "truth": 0.01
+    },
+    {
+      "ci_lower": 0.94604,
+      "ci_upper": 0.95456,
+      "label": "continuous (Welch)",
+      "mc_se": 0.002173,
+      "rate": 0.9503,
+      "successes": 9503,
+      "trials": 10000,
+      "truth": 0.180686
+    },
+    {
+      "ci_lower": 0.946769,
+      "ci_upper": 0.955231,
+      "label": "ratio (delta method)",
+      "mc_se": 0.002159,
+      "rate": 0.951,
+      "successes": 9510,
+      "trials": 10000,
+      "truth": 0.01
+    },
+    {
+      "ci_lower": 0.89761,
+      "ci_upper": 0.90919,
+      "label": "ratio (naive, denominator unit)",
+      "mc_se": 0.002954,
+      "rate": 0.9034,
+      "successes": 9034,
+      "trials": 10000,
+      "truth": 0.01
+    }
+  ],
+  "part_b_sweep": [
+    {
+      "delta_method": {
+        "ci_lower": 0.940588,
+        "ci_upper": 0.954412,
+        "label": "ratio (delta method)",
+        "mc_se": 0.003526,
+        "rate": 0.9475,
+        "successes": 3790,
+        "trials": 4000
+      },
+      "naive": {
+        "ci_lower": 0.945908,
+        "ci_upper": 0.959092,
+        "label": "ratio (naive, denominator unit)",
+        "mc_se": 0.003363,
+        "rate": 0.9525,
+        "successes": 3810,
+        "trials": 4000
+      },
+      "sessions_per_user": 1.0
+    },
+    {
+      "delta_method": {
+        "ci_lower": 0.939526,
+        "ci_upper": 0.953474,
+        "label": "ratio (delta method)",
+        "mc_se": 0.003558,
+        "rate": 0.9465,
+        "successes": 3786,
+        "trials": 4000
+      },
+      "naive": {
+        "ci_lower": 0.933962,
+        "ci_upper": 0.948538,
+        "label": "ratio (naive, denominator unit)",
+        "mc_se": 0.003718,
+        "rate": 0.94125,
+        "successes": 3765,
+        "trials": 4000
+      },
+      "sessions_per_user": 2.0
+    },
+    {
+      "delta_method": {
+        "ci_lower": 0.940854,
+        "ci_upper": 0.954646,
+        "label": "ratio (delta method)",
+        "mc_se": 0.003519,
+        "rate": 0.94775,
+        "successes": 3791,
+        "trials": 4000
+      },
+      "naive": {
+        "ci_lower": 0.89461,
+        "ci_upper": 0.91289,
+        "label": "ratio (naive, denominator unit)",
+        "mc_se": 0.004663,
+        "rate": 0.90375,
+        "successes": 3615,
+        "trials": 4000
+      },
+      "sessions_per_user": 4.0
+    },
+    {
+      "delta_method": {
+        "ci_lower": 0.944843,
+        "ci_upper": 0.958157,
+        "label": "ratio (delta method)",
+        "mc_se": 0.003397,
+        "rate": 0.9515,
+        "successes": 3806,
+        "trials": 4000
+      },
+      "naive": {
+        "ci_lower": 0.855185,
+        "ci_upper": 0.876315,
+        "label": "ratio (naive, denominator unit)",
+        "mc_se": 0.00539,
+        "rate": 0.86575,
+        "successes": 3463,
+        "trials": 4000
+      },
+      "sessions_per_user": 8.0
+    },
+    {
+      "delta_method": {
+        "ci_lower": 0.938996,
+        "ci_upper": 0.953004,
+        "label": "ratio (delta method)",
+        "mc_se": 0.003574,
+        "rate": 0.946,
+        "successes": 3784,
+        "trials": 4000
+      },
+      "naive": {
+        "ci_lower": 0.755683,
+        "ci_upper": 0.781817,
+        "label": "ratio (naive, denominator unit)",
+        "mc_se": 0.006667,
+        "rate": 0.76875,
+        "successes": 3075,
+        "trials": 4000
+      },
+      "sessions_per_user": 16.0
+    }
+  ],
+  "replications": {
+    "sweep": 4000,
+    "table": 10000
+  },
+  "seed": 20240602,
+  "variance_recovery": {
+    "empirical_sd_of_ratio": 0.005151,
+    "mean_delta_method_se": 0.005179,
+    "ratio_predicted_to_empirical": 1.00549,
+    "replications": 3000
+  },
+  "worst_naive_coverage": 0.76875
+}

@@ -1,0 +1,188 @@
+{
+  "alpha": 0.05,
+  "contamination_demo": {
+    "bias_fraction_of_true_effect": -0.603863,
+    "clean_mean_estimate": 0.049825,
+    "clean_mean_se": 0.025284,
+    "contaminated_mean_estimate": 0.019807,
+    "contaminated_mean_se": 0.025284,
+    "replications": 1000,
+    "rho": 0.6,
+    "true_effect": 0.05
+  },
+  "estimator_unbiased": true,
+  "guard_calibrated": true,
+  "guard_false_alarm_rate": {
+    "ci_lower": 0.00053,
+    "ci_upper": 0.001613,
+    "label": "covariate guard false alarms",
+    "mc_se": 0.000276,
+    "rate": 0.001071,
+    "successes": 15,
+    "trials": 14000
+  },
+  "guard_threshold": 0.001,
+  "max_bias_sigma": 1.347026,
+  "max_reduction_gap": 1.359656,
+  "n_per_arm": 2000,
+  "reduction_matches_theory": true,
+  "replications": 2000,
+  "seed": 20240604,
+  "sweep": [
+    {
+      "bias": -0.000952,
+      "bias_mc_se": 0.000707,
+      "coverage": {
+        "ci_lower": 0.939358,
+        "ci_upper": 0.958642,
+        "label": "CUPED CI coverage rho=0.0",
+        "mc_se": 0.004919,
+        "rate": 0.949,
+        "successes": 1898,
+        "trials": 2000
+      },
+      "guard_false_alarms": 0,
+      "mean_adjusted_estimate": 0.049048,
+      "mean_theta": -0.000536,
+      "mean_unadjusted_estimate": 0.049055,
+      "mean_within_rep_reduction": 0.000242,
+      "predicted_reduction": 0.0,
+      "realized_reduction_across_reps": 0.000802,
+      "reduction_mc_se": 0.000634,
+      "rho": 0.0
+    },
+    {
+      "bias": 1.3e-05,
+      "bias_mc_se": 0.0007,
+      "coverage": {
+        "ci_lower": 0.935008,
+        "ci_upper": 0.954992,
+        "label": "CUPED CI coverage rho=0.15",
+        "mc_se": 0.005098,
+        "rate": 0.945,
+        "successes": 1890,
+        "trials": 2000
+      },
+      "guard_false_alarms": 2,
+      "mean_adjusted_estimate": 0.050013,
+      "mean_theta": 0.150004,
+      "mean_unadjusted_estimate": 0.049787,
+      "mean_within_rep_reduction": 0.02276,
+      "predicted_reduction": 0.0225,
+      "realized_reduction_across_reps": 0.019487,
+      "reduction_mc_se": 0.007092,
+      "rho": 0.15
+    },
+    {
+      "bias": -0.000704,
+      "bias_mc_se": 0.000659,
+      "coverage": {
+        "ci_lower": 0.94756,
+        "ci_upper": 0.96544,
+        "label": "CUPED CI coverage rho=0.3",
+        "mc_se": 0.004561,
+        "rate": 0.9565,
+        "successes": 1913,
+        "trials": 2000
+      },
+      "guard_false_alarms": 6,
+      "mean_adjusted_estimate": 0.049296,
+      "mean_theta": 0.299994,
+      "mean_unadjusted_estimate": 0.049607,
+      "mean_within_rep_reduction": 0.090226,
+      "predicted_reduction": 0.09,
+      "realized_reduction_across_reps": 0.083769,
+      "reduction_mc_se": 0.013293,
+      "rho": 0.3
+    },
+    {
+      "bias": 0.000359,
+      "bias_mc_se": 0.000618,
+      "coverage": {
+        "ci_lower": 0.95086,
+        "ci_upper": 0.96814,
+        "label": "CUPED CI coverage rho=0.45",
+        "mc_se": 0.004408,
+        "rate": 0.9595,
+        "successes": 1919,
+        "trials": 2000
+      },
+      "guard_false_alarms": 2,
+      "mean_adjusted_estimate": 0.050359,
+      "mean_theta": 0.450112,
+      "mean_unadjusted_estimate": 0.050244,
+      "mean_within_rep_reduction": 0.202591,
+      "predicted_reduction": 0.2025,
+      "realized_reduction_across_reps": 0.202196,
+      "reduction_mc_se": 0.017148,
+      "rho": 0.45
+    },
+    {
+      "bias": 0.000392,
+      "bias_mc_se": 0.000561,
+      "coverage": {
+        "ci_lower": 0.940994,
+        "ci_upper": 0.960006,
+        "label": "CUPED CI coverage rho=0.6",
+        "mc_se": 0.00485,
+        "rate": 0.9505,
+        "successes": 1901,
+        "trials": 2000
+      },
+      "guard_false_alarms": 4,
+      "mean_adjusted_estimate": 0.050392,
+      "mean_theta": 0.599765,
+      "mean_unadjusted_estimate": 0.050286,
+      "mean_within_rep_reduction": 0.360119,
+      "predicted_reduction": 0.36,
+      "realized_reduction_across_reps": 0.381559,
+      "reduction_mc_se": 0.015856,
+      "rho": 0.6
+    },
+    {
+      "bias": -0.000186,
+      "bias_mc_se": 0.000481,
+      "coverage": {
+        "ci_lower": 0.937725,
+        "ci_upper": 0.957275,
+        "label": "CUPED CI coverage rho=0.75",
+        "mc_se": 0.004987,
+        "rate": 0.9475,
+        "successes": 1895,
+        "trials": 2000
+      },
+      "guard_false_alarms": 1,
+      "mean_adjusted_estimate": 0.049814,
+      "mean_theta": 0.749951,
+      "mean_unadjusted_estimate": 0.049777,
+      "mean_within_rep_reduction": 0.562433,
+      "predicted_reduction": 0.5625,
+      "realized_reduction_across_reps": 0.541703,
+      "reduction_mc_se": 0.015672,
+      "rho": 0.75
+    },
+    {
+      "bias": 0.000166,
+      "bias_mc_se": 0.000314,
+      "coverage": {
+        "ci_lower": 0.935551,
+        "ci_upper": 0.955449,
+        "label": "CUPED CI coverage rho=0.9",
+        "mc_se": 0.005076,
+        "rate": 0.9455,
+        "successes": 1891,
+        "trials": 2000
+      },
+      "guard_false_alarms": 0,
+      "mean_adjusted_estimate": 0.050166,
+      "mean_theta": 0.900184,
+      "mean_unadjusted_estimate": 0.050221,
+      "mean_within_rep_reduction": 0.810109,
+      "predicted_reduction": 0.81,
+      "realized_reduction_across_reps": 0.804251,
+      "reduction_mc_se": 0.006992,
+      "rho": 0.9
+    }
+  ],
+  "true_effect": 0.05
+}

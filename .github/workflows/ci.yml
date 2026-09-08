@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: lint + tests (py${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+      - name: Create environment
+        run: |
+          uv venv --python ${{ matrix.python-version }}
+          uv pip install --python .venv/bin/python -e ".[app,dev]"
+      - name: Lint
+        run: .venv/bin/python -m ruff check . && .venv/bin/python -m black --check .
+      - name: Tests
+        run: .venv/bin/python -m pytest
+
+  simulations:
+    name: simulation validation suite
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+      - name: Create environment
+        run: |
+          uv venv --python 3.11
+          uv pip install --python .venv/bin/python -e ".[dev]"
+      # Runs all five studies. Each exits non-zero if its own validation fails,
+      # and sims/verify_results.py then asserts that every study actually
+      # produced artifacts and reported passing -- so a study that crashes
+      # cannot leave stale results behind and look like a pass.
+      - name: Run studies
+        run: make sim
+      # Deliberately not asserting byte-identity against the committed results
+      # here. Byte-reproducibility holds for a fixed platform and dependency set
+      # (verified locally by deleting results/ and re-running make sim), but CI
+      # resolves dependencies fresh on Linux, and a scipy point release can move
+      # an optimizer result in the sixth decimal or flip one rejection out of
+      # 20,000. Gating on that would produce red builds that mean nothing. What
+      # CI proves instead is stronger and stabler: the studies pass on a clean
+      # machine that has never seen this code.
+      - name: Show any drift from the committed results (informational)
+        if: always()
+        run: git diff --stat -- results/ || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: simulation-results
+          path: results/

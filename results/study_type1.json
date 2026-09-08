@@ -1,0 +1,133 @@
+{
+  "all_within_3_mc_se": true,
+  "alpha": 0.05,
+  "outside_3_mc_se": [],
+  "replications": {
+    "binary": 20000,
+    "other": 10000
+  },
+  "scenarios": [
+    {
+      "ci_lower": 0.04834,
+      "ci_upper": 0.05446,
+      "family": "binary",
+      "label": "binary n=200",
+      "mc_se": 0.001561,
+      "n_per_arm": 200,
+      "rate": 0.0514,
+      "successes": 1028,
+      "trials": 20000
+    },
+    {
+      "ci_lower": 0.046639,
+      "ci_upper": 0.052661,
+      "family": "binary",
+      "label": "binary n=1,000",
+      "mc_se": 0.001536,
+      "n_per_arm": 1000,
+      "rate": 0.04965,
+      "successes": 993,
+      "trials": 20000
+    },
+    {
+      "ci_lower": 0.048583,
+      "ci_upper": 0.054717,
+      "family": "binary",
+      "label": "binary n=5,000",
+      "mc_se": 0.001565,
+      "n_per_arm": 5000,
+      "rate": 0.05165,
+      "successes": 1033,
+      "trials": 20000
+    },
+    {
+      "ci_lower": 0.047854,
+      "ci_upper": 0.053946,
+      "family": "binary",
+      "label": "binary n=50,000",
+      "mc_se": 0.001554,
+      "n_per_arm": 50000,
+      "rate": 0.0509,
+      "successes": 1018,
+      "trials": 20000
+    },
+    {
+      "ci_lower": 0.040745,
+      "ci_upper": 0.048855,
+      "family": "continuous",
+      "label": "continuous n=200",
+      "mc_se": 0.002069,
+      "n_per_arm": 200,
+      "rate": 0.0448,
+      "successes": 448,
+      "trials": 10000
+    },
+    {
+      "ci_lower": 0.04592,
+      "ci_upper": 0.05448,
+      "family": "continuous",
+      "label": "continuous n=1,000",
+      "mc_se": 0.002184,
+      "n_per_arm": 1000,
+      "rate": 0.0502,
+      "successes": 502,
+      "trials": 10000
+    },
+    {
+      "ci_lower": 0.046784,
+      "ci_upper": 0.055416,
+      "family": "continuous",
+      "label": "continuous n=5,000",
+      "mc_se": 0.002202,
+      "n_per_arm": 5000,
+      "rate": 0.0511,
+      "successes": 511,
+      "trials": 10000
+    },
+    {
+      "ci_lower": 0.047168,
+      "ci_upper": 0.055832,
+      "family": "ratio",
+      "label": "ratio n=500",
+      "mc_se": 0.00221,
+      "n_per_arm": 500,
+      "rate": 0.0515,
+      "successes": 515,
+      "trials": 10000
+    },
+    {
+      "ci_lower": 0.045632,
+      "ci_upper": 0.054168,
+      "family": "ratio",
+      "label": "ratio n=2,000",
+      "mc_se": 0.002177,
+      "n_per_arm": 2000,
+      "rate": 0.0499,
+      "successes": 499,
+      "trials": 10000
+    },
+    {
+      "ci_lower": 0.046976,
+      "ci_upper": 0.055624,
+      "family": "cuped",
+      "label": "CUPED n=500",
+      "mc_se": 0.002206,
+      "n_per_arm": 500,
+      "rate": 0.0513,
+      "successes": 513,
+      "trials": 10000
+    },
+    {
+      "ci_lower": 0.048705,
+      "ci_upper": 0.057495,
+      "family": "cuped",
+      "label": "CUPED n=2,000",
+      "mc_se": 0.002242,
+      "n_per_arm": 2000,
+      "rate": 0.0531,
+      "successes": 531,
+      "trials": 10000
+    }
+  ],
+  "seed": 20240601
+}
